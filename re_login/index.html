@@ -9,6 +9,7 @@
             background-image: url(./image/1.png);
             background-size: cover;
             background-repeat: no-repeat;
+            background-color: #1f242d;
         }
         form{
             max-width: 400px;
@@ -66,10 +67,24 @@
             margin: 80px auto; 
 
         }
+        ::-webkit-scrollbar {
+    width: .60rem;
+    background-color: #1f242d;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #42434a;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e6e6ef;;
+}
     </style>
 </head>
 <body>
-    <form action="">
+    <form action="./login.php" method="post">
         <div>
             <label for="name">Username:</label>
             <input type="text" id="name" name="name" placeholder="Enter your username">
